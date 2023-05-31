@@ -68,9 +68,9 @@ spec:
               value: "{{ .Values.storage.s3.secretkey }}"
             {{- end }}
             - name: MINIO_SINGLE_BUCKET
-              value: "{{ .Values.bucket.fromMinioBucket }}"
+              value: "{{ .Values.storage.bucket.fromMinioBucket }}"
             - name: S3_SINGLE_BUCKET
-              value: "{{ .Values.bucket.toS3Bucket }}"
+              value: "{{ .Values.storage.bucket.toS3Bucket }}"
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
