@@ -1,2 +1,2 @@
-# rpsm-s3-minio
-Report Portal storage migrating single bucket MinIO to single bucket S3
+# Report Portal storage migration
+Report Portal storage migration single bucket MinIO to single bucket S3
